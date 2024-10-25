@@ -1,7 +1,10 @@
-body{
+  html,body{
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
     }
     .header{
         min-height: 100vh;
@@ -511,13 +514,12 @@ body{
         left: 50%;
       }
     }
-    .text-box{
+ .text-box{
         width: 90%;
-        position: absolute;
+        display: block;
+        margin-inline: auto;
+        margin-top: 10%;
         color: #ffff;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
         text-align: center;
     }
     .text-box h1{
@@ -739,6 +741,14 @@ body{
       margin: 10px;
       cursor: pointer;
     }
+    .text-box{
+      width: 90%;
+      display: block;
+      margin-inline: auto;
+      margin-top: 45%;
+      color: #ffff;
+      text-align: center;
+  }
   }
 
 
